@@ -1,0 +1,681 @@
+/* /* color me rgb me -0 se lekar 255 tak koi bhi value dal skte hain// aur color  code select kr skte ho
+// uske bad ata hai
+//RGBA jisme baki to rgb ki trha hai lekin a ki value me transparent hota  hai aur isme
+// 0.0 sabse jada hai aur 1.0 sabse kam inke beech me khkelna hai
+
+
+
+#bg{
+    background-color: lavender;
+background-image: url(photo.jpg);
+background-repeat: no-repeat;
+background-position:left right ;
+background-size: contain;
+background-attachment: fixed;
+
+}
+
+#border{
+    border-style: ridge solid inset dotted;
+    border-width: 10px;
+    border-color: coral;
+    border-radius: 50px 20px ;
+    padding-top :50px;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#text{
+    border: 2px black inset;
+    width: 350px;
+    margin: auto;
+    color: lightsalmon;
+    /* text-align: justify; 
+    padding: 50px;
+    direction: ltr;
+    text-decoration: underline line-through;
+    text-transform: uppercase;
+    line-height: 50px;
+    line-break:anywhere;
+    text-indent: 50px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    white-space: wrap;
+    word-wrap: break-word;
+    text-shadow: saddlebrown 3px 10px 5px ;
+    writing-mode:0 ;
+
+}
+#link:link{
+    /* link states 1 :link state
+    visted state
+    hover
+    active 
+    text-decoration: none;
+    color: yellowgreen;
+}
+#link:visited{color: black;
+
+}
+#link:hover{ color: blue;
+
+}
+#link:active{color: rebeccapurple;
+
+}
+
+#font{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant:small-caps;
+    font-family:sans-serif ;
+    /* font family ko google me search krke ek process krke head se link krke use kr skte hain 
+    ek aur tareeqa bhi hai download krke download krke font face aur uske andar font family aur uske andar src url pr path
+    copy kr skte hain
+
+
+}
+#parent{
+
+    /* css unit janegenge absolute and relative 
+border: 1pt dotted black;
+height: 50vh;
+width: 50vw;
+cursor:pointer;
+
+}
+#child{
+border: blue 1px solid;
+width: 50%;
+/* em aur rem hard hai smjh liya lekin likh nhi rha hu  isi me cursur change krna hai
+
+font-size: 50px;
+
+}
+#box{
+    background-color: salmon;
+    height: 350px;
+    width: 50%;
+    margin: 50px auto;
+    border: 5px red solid;
+    box-shadow:50px 50px 10px 20px saddlebrown  ;
+    opacity: 0.7;
+
+
+}
+#filter{
+    filter: drop-shadow(10px 10px blue) blur(1pt) grayscale(100%) hue-rotate(80deg) invert(100%) opacity(50%) brightness(80%) ;
+
+}
+#img-spread{
+    margin: 50px 0 0 80px;
+    border: 5px solid black;
+    height: 100vh;
+
+    background-image: url(photo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+#new-img{
+    background-image: url(photo.jpg);
+    height: 100vh;
+}
+
+#gradiant{
+    height: 50vh;
+    width: 50vw;
+    background-image:radial-gradient(circle ,   black,blue,green)
+
+}
+
+#overflow{
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+    margin: 20px auto;
+    overflow-x: none;
+    overflow-y:auto ;
+    resize: both;
+}
+    ul{
+        list-style-type:lower-alpha;
+        list-style-position: inside;
+    }
+    li{
+        border: 1px black solid;
+    }
+    table{
+        border: 1px solid black;
+        border-collapse: separate;
+        empty-cells: hide;
+        width: 100%;
+        table-layout: auto;
+    }
+    tr{
+        border: 1px solid black;
+    }
+    th{
+        border: 1px solid black;
+        height: 30px;
+        padding: 2px;
+        text-align:center;
+        vertical-align: bottom;
+        border-spacing:14px ;
+    }
+td{
+    border-right: 1px solid black ;
+height: 30px;
+padding: 2px;
+text-align:center;
+vertical-align: bottom;
+border-spacing:14px;
+cursor: pointer;
+
+}
+#fun{
+    background-color: teal;
+    height:200px;
+    width:calc(100%-200px);
+
+}
+#google{
+    padding: 10px 30px;
+    margin: 20px;
+    background-color:var(--btn-color);
+    color: violet;
+    
+}
+:root{
+    --primary-color:teal;
+    --btn-color:blue;
+    --text-color:gray;
+}
+#div1{
+    background-color: blueviolet;
+width:600px;
+height:150px;
+margin: 100px 0;
+
+}
+
+#div2{
+    background-color: burlywood;
+    width:600px;
+    height:150px;
+    padding: 50px;
+    box-sizing:border-box;
+}
+#green{
+    color: green;
+}
+#blue{color: red;
+
+
+}
+
+#link1{
+color: initial;
+
+}
+
+#link2{color: inherit;
+
+
+}
+
+#hello{
+    width: 500px;
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid black;
+    object-position: left;
+}
+/* koi bhi element ki kisi special cheez ko point out krne ke liye psudo class ka use krte hain
+
+
+jaise 
+li:first-child{
+iske andar kam
+first ko checkh krne ke liye}
+kisi aur ko slect krne ke liye
+
+li:nth-child(yaha number ya odd even){
+
+}
+
+
+
+
+
+
+input:focus{
+    border:1px rgb(228, 0, 0) solid;
+    
+}
+
+/* pusdo element me :: do hote hain ye symbol 
+p::first-line{
+    font-size: 35px;
+    color: violet;
+}
+h1::before{
+    content: url(photo.jpg);
+}
+h1::after{
+    content: "badme likha";
+}
+::selection{
+    color: blue;
+ background-color: violet;
+}
+
+
+/* char value display ke
+block = pura width  div,p,h1toh6,form etc
+1:ye new line se start hoga
+2:pura width lega
+3:heifht and widht dono dal skte hain
+
+
+
+inline = utna width jitni zarurat a,img,span etc
+1:new line se start nhi
+2:full width nhi hot zaruart ke mutabiq
+3:height and width apply nhi kr skte 
+
+inline-block = inline ki sab property pr height aur width lega
+
+none = 
+ 
+.display{
+    border: 1px solid black;
+    height: 100px;
+    width: 49%;
+    /* display: inline; */
+    /* default tha block 
+    display:inline-block ;
+}
+#display1{
+    /* display:none; 
+    visibility: hidden;
+}
+/* postion char type ke 
+
+static = default pehle se hi hota hai  postion 
+
+relative = 
+
+fixed
+
+absolute
+
+*/
+
+/* #position{
+    /* border: 1px solid rebeccapurple; ye positon ke liye hai 
+    padding: 20px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 100px;
+    position: relative;
+    
+    
+}
+#one{width: 100px;
+    height: 100px;
+    background-color: blue;
+display:inline-block;
+position: relative;
+z-index: 10;
+
+}
+#two{width: 100px;
+    height: 100px;
+    background-color: green;
+display:inline-block; */
+/* absolute me jo position ki calculation hai vo positioned element se tay krega mtlb parent ya pas ke koi bhi 
+element ko positioned ho gya hai uske hisab se calculate krke ye tay hoga ki kaha jana hai agar kuch na mila toh 
+body se tay krega jaise apn ne absolute diye toh uski jgha me koi dusra element aa jayega quki ye apni jgha chhor deta hai
+kuch nhi hai bs with respect to krna hai hogya  */
+/* position:absolute; 
+position: relative;
+top: 0px;top: 50px;
+    left: -50px;
+z-index: 9;
+
+}
+#three{width: 100px;
+    height: 100px;
+    background-color: black;
+display:inline-block;
+position: relative;
+top: 100px;
+    left: -100px;
+    z-index: 8;
+}
+#float{
+    width: 100px;
+    height: auto;
+    float: right;
+}
+#float1 {
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+  */
+  body{
+    height: 1500pc;
+}
+#nav{
+    background-color: green;
+ 
+}
+ul{
+    display: flex;
+    justify-content: right;
+  
+    overflow: auto;
+}
+li{
+    color: wheat;
+    list-style: none;
+    overflow: auto;
+    
+    padding: 50px;
+    
+
+
+}
+#clear{
+    border: 5px solid burlywood;
+    overflow: auto;
+    
+}
+.img-clear{
+    
+    width: 100px;
+    height: auto;
+}
+#img-clear{
+    float: right;
+}
+#img-clear2{
+    float: right;
+    clear: right;
+    
+    
+}
+
+#content{
+    width: 70%;
+    background-color: blue;
+    height: 200px;
+    float: left;
+}
+
+#sidebar{
+    background-color: black;
+    width: 30%;
+    height: 150px;
+    float: left;
+}
+#footer{
+    background-color: yellowgreen;
+    clear: both;
+    
+}
+
+#reper{
+padding: 20px;
+margin: 20px;
+}
+#ancor{
+    text-decoration: none;
+    background-color: lightblue;
+    padding: 10px 20px ;
+    color: white;
+    display: inline-block;
+    /* transform: skewX(10deg); ye jitna ho rha hai ki sab center se ho rha hai
+    lekin isko change krna hia toh % de skte hain ki kaha se ghumana hai insab cheezon ko */
+    /* transform: rotate(20deg);
+    transform-origin:0% 100% ; */
+
+
+}
+/* #ancor:hover{
+    display: inline-block;
+    /* transform: translate(50px,50px);  isme x aur y AXIs ki postion dena hai*/
+/* transform: rotate(20deg); isme kitne digreee ghoom rha utna kr skt e */
+/* transform: scale(0.2,0.7); isme jitne se multipy krna hai utna dena hai aur ult akrna hai toh 0 se multiply krna hai
+sath sath sir width dena hai toh x sirf height dena hai toh y }*/
+
+#start{
+    border:2px solid red;
+    height:200px;
+    width: 200px;
+    margin: 150px;
+
+
+
+}
+
+#end{ height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    transform: perspective(300px) translate3d(0px,0px,-50px)
+
+
+}
+
+#transation{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition-property: transform, border-radius;
+    transition-duration: 1s;
+    transition-delay: 100ms;
+    transition-timing-function: ease-in-out;
+   
+
+
+
+}
+#transation:hover{ 
+    display: inline-block;
+    transform: translate(500px,0px);
+    margin:0px;
+    border-radius:50px ;
+ 
+   
+}
+@keyframes changecolor{
+  0%{
+    background-color: red;
+    border-radius: 0%;
+  }
+  10%{
+    background-color: red;
+    border-radius: 10%;
+  }
+  20%{
+    background-color: red;
+    border-radius: 20%;
+  }
+  30%{
+    background-color: red;
+    border-radius: 30%;
+  }
+  40%{
+    background-color: red;
+    border-radius:40%;
+  }
+  50%{
+    background-color: red;
+    border-radius: 50%;
+  }
+  60%{
+    background-color: red;
+    border-radius: 40%;
+  }
+  70%{
+    background-color: red;
+    border-radius: 30%;
+  }
+  80%{
+    background-color: red;
+    border-radius: 20%;
+  }
+  90%{
+    background-color: red;
+    border-radius: 10%;
+  }
+  100%{
+    background-color: red;
+    border-radius: 10%;
+  }
+}
+#animate{
+    margin: 50px;
+    background-color: red;
+    height: 100px;
+    width: 200px;
+ 
+   
+   
+}
+#animate:hover{ transition: changecolor;
+    animation-name:changecolor ;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count:infinite;
+}
+@media print{
+   p{
+    font-size: 50px;
+   }
+}
+@media screen {
+    p{
+        font-weight: bold;
+    }
+    
+}
+#device1{
+    width: 70%;
+    background-color: lawngreen;
+float: left;
+}
+#device2{
+    width: 30%;
+    float: left;
+background-color: royalblue;
+}
+
+@media screen and (max-width:768px){
+    #device1{
+        width: 50%;
+    }
+    #device2{
+        width:50%;
+    }
+}
+
+#colum {
+    column-count:3;
+    column-gap: 2px;
+    border: 1px black solid;
+    column-rule-style:solid ;
+    column-rule-width:1px ;
+    column-rule-color: blue;
+    column-span: all;
+}
+/* VERY IMPORTANT IS FLEXBOX */
+/* .flex{
+
+background-color: indianred;
+display: flex;
+height: 400px;
+
+flex-wrap: wrap;
+/* flex-flow: row wrap;
+justify-content: space-between;
+height: 400px;
+align-items: flex-start;
+align-content: ; 
+align-content: flex-start;
+
+
+}
+
+.flexchild{
+background-color: wheat;
+margin: 20px;
+padding: 20px;
+width: 100px;
+text-align: center;
+
+} */
+
+.grid{
+    background-color: aqua;
+
+padding: 20px;
+display: grid;
+grid-template-columns:200px 300px 200px ;
+/* grid-template-rows: 100px 200px auto; */
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+justify-content: space-around;
+height: 600px;
+align-content: start;
+
+}
+.gridchild{
+    background-color: wheat;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+ 
+
+
+}
+#grid1{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+/* grid-column: 1/4; */
+/* grid-row: 1/3; */
+grid: area 1px / 2px / 3px / 7px; 
+background-color: black;
+}
+#grid2{
+
+}
+#grid3{
+
+}
+#grid4{
+
+}
+#grid5{
+
+}
+#grid6{
+
+}
+#grid7{
+
+}
+#grid8{
+
+}
+#grid9{
+
+}
+
+
